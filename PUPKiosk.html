@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUP Navigator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+        function showSceneryBox(imgSource, heading, description){
+            let d = document.getElementById("display");
+            let e =document.getElementById("body");
+            e.style.overflow = "hidden";
+            document.addEventListener('mousemove', displayFollowCamera);
+            d.style.left = event.clientX + 5 + "px";
+            d.style.top = event.clientY + 5 + "px"; 
+            d.innerHTML = "<div id='wrapper'><img id='imgid' src='" + imgSource + 
+			"'>"+ "<p>" + heading + "</p>" + "<p>" + description + "</p></div>";
+        }   
+
+        function displayFollowCamera(){
+            let a = document.getElementById('display');
+            a.style.left = event.clientX + 5 + "px";
+            a.style.top = event.clientY + 5 + "px"; 
+        }
+		
+		function removeSceneryBox(){
+            let a = document.getElementById("display");
+            let b = document.getElementById("body");
+            a.removeAttribute('style');
+            b.removeAttribute('style');
+            document.removeEventListener('mousemove', displayFollowCamera);
+            a.removeChild(a.childNodes[0]);  
+        }
+    </script>
+<body id="body">
+    <header>
+        <img src="images/PUPHeader.png" alt="PUP Header">
+    </header>
+    <main>
+        <img id="pupmap" src="images/pupmap.png" alt="PUP Map" usemap="#map">
+        <map name="map">
+		
+		<!--1, PUP Amphitheater-->    
+			<area shape="poly" coords=
+			"
+			990, 736,
+			940, 734,
+			942, 744,
+			891, 749,
+			893, 762,
+			898, 774,
+			903, 784,
+			910, 793,
+			918, 803, 
+			926, 810,
+			938, 817,
+			951, 823,
+			965, 826,
+			979, 827,
+			992, 827,
+			1006, 823,
+			1019, 817,
+			1029, 812,
+			1003, 775,
+			1013, 770,
+			" href="#" 
+			alt="PUP Amphitheater" 
+			onmouseover="showSceneryBox( 
+			'images/pupamphi.jpg',
+			'PUP Amphitheater', 
+			'This is where students eat their lunch whether they brought it or they bought it. Beware of bird pooping on your head')"
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--2-Water Pump-->    
+			<area shape="poly" coords=
+			"
+			768, 10,
+			769, 58,
+			706, 59,
+			706, 30,
+			747, 30,
+			747, 11
+			" href="#" 
+			alt="PUP Water Pump" 
+			onmouseover="showSceneryBox( 
+			'images/pupwaterpump.jpg',
+			'PUP Water Pump',
+			'A facility that supplies water to the whole campus.')"
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--2-Water Pump circle-->    
+			<area shape="circle" coords=
+			"
+			735, 44,
+			40
+			" href="#" 
+			alt="PUP Water Pump" 
+			onmouseover="showSceneryBox( 
+			'images/pupwaterpump.jpg',
+			'PUP Water Pump',
+			'A facility that supplies water to the whole campus.')"
+			onmouseout="removeSceneryBox()">
+		
+		<!--3-Building and Grounds Maintenance Office-->    
+			<area shape="poly" coords=
+			"
+			963, 1432,
+			963, 1459,
+			833, 1459,
+			833, 1431
+			" href="#" 
+			alt="PUP Building and Grounds Maintenance Office" 
+			onmouseover="showSceneryBox(
+			'images/3maintenance.jpg',
+			'PUP Building and Grounds Maintenance Office',
+			'This is where the campus maintenance office is situated.')",
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--3-Water Building and Grounds Maintenance Office-->    
+			<area shape="circle" coords=
+			"
+			900, 1419,
+			40
+			" href="#" 
+			alt="PUP Building and Grounds Maintenance Office" 
+			onmouseover="showSceneryBox(
+			'images/3maintenance.jpg',
+			'PUP Building and Grounds Maintenance Office',
+			'This is where the campus maintenance office is situated.')",
+			onmouseout="removeSceneryBox()"> 
+		<!--4-Cat walk-->    
+			<area shape="poly" coords=
+			"
+			1528, 516,
+			1539, 533,
+			1858, 546,
+			2132, 554,
+			2131, 538,
+			" href="#" 
+			alt="PUP Cat walk" 
+			onmouseover="showSceneryBox( 
+			'images/PUPcatwalk.png',
+			'PUP Catwalk',
+			'The “catwalk”, a nickname of sorts for this pathway. As you can see, a lot of posts, from leftist propagandas, theatrical and performance promotions, and even birthday greetings, are posted here.')"
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--4-Cat walk-->    
+			<area shape="circle" coords=
+			"
+			1689, 536,
+			40
+			" href="#" 
+			alt="PUP Cat walk" 
+			onmouseover="showSceneryBox( 
+			'images/PUPcatwalk.png',
+			'PUP Catwalk',
+			'The “catwalk”, a nickname of sorts for this pathway. As you can see, a lot of posts, from leftist propagandas, theatrical and performance promotions, and even birthday greetings, are posted here.')"
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--5-Centennial Monument-->    
+			<area shape="poly" coords=
+			"
+			1206, 606,
+			1166, 606,
+			1166, 660,
+			1206, 660
+			" href="#" 
+			alt="PUP Centennial Monument" 
+			onmouseover="showSceneryBox( 
+			'images/PUPcentennial.jpg',
+			'PUP Centennial Monument',
+			'Description')" 
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--5-Centennial Monument-->    
+			<area shape="circle" coords=
+			"
+			1189, 634,
+			40
+			" href="#" 
+			alt="PUP Centennial Monument" 
+			onmouseover="showSceneryBox( 
+			'images/PUPcentennial.jpg',
+			'PUP Centennial Monument',
+			'Description')" 
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--6-Charlie del Rosario Student Development -->    
+			<area shape="poly" coords=
+			"
+			464, 410,
+			414, 494,
+			677, 649,
+			690, 626,
+			703, 635,
+			733, 586,
+			719, 578,
+			726, 563,
+			723, 562,
+			718, 559,
+			" href="#" 
+			alt="PUP Charlie del Rosario Student Development " 
+			onmouseover="showSceneryBox( 
+			'images/pupcharliebldg.jpg',
+			'Charlie del Rosario Building',
+			'Named after Charlie del Rosario, the first ever Desaparecido during the Marcos era. It is also known as “Unyon,” from its former name, “Unyon ng Mag-aaral Building.”')" 
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--7-EASTGATE_circle -->
+			<area shape="circle" coords=
+			"2187, 1378, 
+			40" href="#" 
+			alt="PUP EAST_Gate" 
+			onmouseover="showSceneryBox(
+			'images/pupgate.jpg', 
+			'PUP Main Gate', 
+			'Main entrance of PUP, where madness happens as students and rallyist fight for their rights')", 
+			onmouseout="removeSceneryBox()">
+		
+		<!--8- flag pole-->    
+			<area shape="poly" coords=
+			"
+			1316, 801,
+			1351, 783,
+			1371, 818,
+			1335, 838,
+			" href="#" 
+			alt="PUP flag pole" 
+			onmouseover="showSceneryBox( 
+			'images/flag pole.jpg',
+			'PUP Flag Pole',
+			'This is where the students assemble on their flag ceremony.')",
+			onmouseout="removeSceneryBox()">
+		
+		<!--8- flag pole circle-->    
+			<area shape="circle" coords=
+			"
+			1345, 815,
+			40
+			" href="#" 
+			alt="PUP flag pole" 
+			onmouseover="showSceneryBox( 
+			'images/flag pole.jpg',
+			'PUP Flag Pole',
+			'This is where the students assemble on their flag ceremony.')",
+			onmouseout="removeSceneryBox()">
+		
+		<!--9- Grandstand-->    
+			<area shape="poly" coords=
+			"
+			1576, 941,
+			1614, 888,
+			1602, 878,
+			1627, 843,
+			1640, 852,
+			1679, 798,
+			1698, 812,
+			1703, 804,
+			1720, 816,
+			1681, 870,
+			1691, 877, 
+			1656, 928,
+			1644, 921,
+			1606, 975,
+			1590, 962,
+			1595, 955,
+			" href="#" 
+			alt="PUP grandstand" 
+			onmouseover="showSceneryBox(
+			'images/pupgrandstand.jpg',
+			'PUP Granstand',
+			'gosh ang haba ng pila dito nung exam T__T umulan pa ')" 
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--9- Grandstand-->    
+			<area shape="circle" coords=
+			"
+			1647, 885,
+			40
+			" href="#" 
+			alt="PUP grandstand" 
+			onmouseover="showSceneryBox(
+			'images/pupgrandstand.jpg',
+			'PUP Granstand',
+			'gosh ang haba ng pila dito nung exam T__T umulan pa ')" 
+			onmouseout="removeSceneryBox()">  
+		
+		<!--10- GYMNASIUM-->    
+			<area shape="poly" coords=
+			"
+			1670, 66,
+			1657, 253,
+			1954, 275,
+			1958, 236,
+			1984, 237,
+			1992, 132,
+			1967, 130,
+			1969, 88
+			" href="#" 
+			alt="PUP GYMNASIUM" 
+			onmouseover="showSceneryBox(
+			'images/pupgym.jpg',
+			'PUP Gym',
+			'This is where some of the campus events take place.')",
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--11-CHAPEL_circle--> 
+			<area shape="circle" coords=
+			"1272, 1202, 
+			160" href="#" 
+			alt="PUP Chapel" 
+			onmouseover="showSceneryBox(
+			'images/pupchapel.jpg',
+			'PUP Chapel',
+			'This is the training grounds of PUPians. You will see dancers perfecting their steps and volleyball players perfecting their serve')" 
+			onmouseout="removeSceneryBox()">
+        
+		<!--12-Library HS1 -->    
+			<area shape="poly" coords=
+			"
+			383, 287,
+			362, 322,
+			708, 526,
+			730, 492
+			" href="#" 
+			alt="PUP Library HS1" 
+			onmouseover="showSceneryBox( 
+			'images/12lhs.jpg',
+			'PUP Laboratory High School',
+			'PUP high school campus')" ,
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--12-Library HS2 -->    
+			<area shape="poly" coords=
+			"
+			378, 171,
+			357, 206,
+			674, 393,
+			695, 359,
+			" href="#" 
+			alt="PUP Library HS1" 
+			onmouseover="showSceneryBox( 
+			'images/12lhs.jpg',
+			'PUP Laboratory High School',
+			'PUP high school campus')",
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--12-Library HS3 -->    
+			<area shape="poly" coords=
+			"
+			412, 102,
+			391, 137,
+			608, 265,
+			629, 230,
+			" href="#" 
+			alt="PUP Library HS1" 
+			onmouseover="showSceneryBox( 
+			'images/12lhs.jpg',
+			'PUP Laboratory High School',
+			'PUP High School campus')" 
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--12-Library HS3 -->    
+			<area shape="poly" coords=
+			"
+			452, 39,
+			431, 74,
+			621, 186,
+			642, 152,
+			" href="#" 
+			alt="PUP Library HS1" 
+			onmouseover="showSceneryBox( 
+			'images/12lhs.jpg',
+			'PUP Laboratory High School',
+			'PUP High School campus')",
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--12-Library HS circle -->    
+			<area shape="circle" coords=
+			"
+			504, 179,
+			40
+			" href="#" 
+			alt="PUP Library HS1" 
+			onmouseover="showSceneryBox( 
+			'images/12lhs.jpg',
+			'PUP Laboratory High School',
+			'PUP High School campus')" 
+			onmouseout="removeSceneryBox()">  
+			
+		<!--13-Lagoon circle1-->    
+			<area shape="circle" coords=
+			"
+			1127, 434,
+			74
+			" href="#" 
+			alt="PUP Lagoon" 
+			onmouseover="showSceneryBox( 
+			'images/puplagoon.jpg',
+			'PUP lagoon',
+			'PUP lagoon is one of the campus spots where students usually hang out. May food stalls dito kayo na mag-english T-T')" 
+			onmouseout="removeSceneryBox()"> 
+			
+        <!--13-Lagoon circle2-->    
+			<area shape="circle" coords=
+			"
+			1017, 612,
+			77
+			" href="#" 
+			alt="PUP Lagoon" 
+			onmouseover="showSceneryBox( 
+			'images/puplagoon.jpg',
+			'PUP lagoon',
+			'PUP lagoon is one of the campus spots where students usually hang out. May food stalls dito kayo na mag-english T-T')" 
+			onmouseout="removeSceneryBox()"> 
+       
+	   <!--13-Lagoon poly1-->    
+			<area shape="poly" coords=
+			"
+			1057, 458,
+			1174, 490,
+			1135, 529,
+			1131, 538,
+			1131, 552,
+			1127, 565,
+			1116, 596,
+			1100, 629,
+			1082, 654,
+			1028, 538,
+			1052, 527,
+			1055, 513,
+			" href="#" 
+			alt="PUP Lagoon" 
+			onmouseover="showSceneryBox( 
+			'images/puplagoon.jpg',
+			'PUP lagoon',
+			'PUP lagoon is one of the campus spots where students usually hang out. May food stalls dito kayo na mag-english T-T')" 
+			onmouseout="removeSceneryBox()"> 
+       
+	   <!--13-Lagoon poly2-->    
+			<area shape="poly" coords=
+			"
+			943, 635,
+			1063, 675,
+			1009, 718,
+			996, 718,
+			983, 728,
+			972, 730,
+			932, 730,
+			920, 733,
+			911, 734,
+			902, 739,
+			891, 743,
+			877, 747,
+			878, 694,
+			898, 688,
+			914, 683,
+			926, 682,
+			940, 682,
+			946, 674,
+			" href="#" 
+			alt="PUP Lagoon" 
+			onmouseover="showSceneryBox( 
+			'images/puplagoon.jpg',
+			'PUP lagoon',
+			'PUP lagoon is one of the campus spots where students usually hang out. May food stalls dito kayo na mag-english T-T')",
+			onmouseout="removeSceneryBox()"> 
+        
+		<!--14-MainBuilding-->    
+			<area shape="poly" coords=
+			"940, 926, 
+			992, 926, 
+			1070, 1060,
+			1044, 1101,
+			892, 1101,
+			864, 1060,
+			" href="#" 
+			alt="PUP MAIN Building" 
+			onmouseover="showSceneryBox( 
+			'images/pupmainbuilding.jpg',
+			'PUP Main Building',
+			'Composed of 4 wings, The PUP main building is where most of the offices and college rooms are situated.')",
+			onmouseout="removeSceneryBox()"> 
+        
+		<!--15-EASTwing-->    
+			<area shape="poly" coords=
+			"1045, 1100, 
+			1046, 1380, 
+			1023, 1383, 
+			1023, 1406, 
+			929, 1406, 
+			928, 1380, 
+			895, 1385, 
+			895, 1101" href="#" 
+			alt="PUP EAST Wing" 
+			onmouseover="showSceneryBox(
+			'images/pupeast.jpg',			
+			'PUP East Wing',
+			'An educational building where some colleges are situated. IT Classrooms can be found here.')" 
+			onmouseout="removeSceneryBox()"> 
+        
+		<!--16-NORTHwing-->    
+			<area shape="poly" coords=
+			"993, 925, 
+			1070, 1054, 
+			1310, 917, 
+			1298, 888, 
+			1317, 874, 
+			1269, 794, 
+			1249, 804, 
+			1236, 784" href="#" 
+			alt="PUP North Wing" 
+			onmouseover="showSceneryBox(
+			'images/pupnorth.jpg', 
+			'PUP North Wing',
+			'This is where CCiS students wait for the approval of the Dean')",
+			onmouseout="removeSceneryBox()"> 
+        
+		<!--17-SOUTHWing-->    
+			<area shape="poly" coords=
+			"
+			587, 1045,
+			706, 976,
+			725, 1003,
+			732, 1003,
+			788, 1100,
+			863, 1059,
+			892, 1100,
+			817, 1148,
+			873, 1244,
+			866, 1249,
+			883, 1279,
+			766, 1350,
+			742, 1310,
+			735, 1314,
+			602, 1091,
+			609, 1084,
+			" href="#" 
+			alt="PUP SOUTH Wing" 
+			onmouseover="showSceneryBox( 
+			'images/17southwing.jpg',
+			'PUP South Wing',
+			'This is where most of the school-student transactions happen. The university cashier and Landbank ATM is situated there.')",
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--18-WESTwing-->    
+			<area shape="poly" coords=
+			"699, 784, 
+			944, 926, 
+			865, 1055, 
+			624, 915, 
+			640, 887, 
+			619, 873, 
+			665, 797, 
+			687, 805
+			" href="#" 
+			alt="PUP WEST Wing" 
+			onmouseover="showSceneryBox(
+			'images/pupwest.jpg', 
+			'PUP West Wing',
+			'An educational building where some colleges are situated.')",
+			onmouseout="removeSceneryBox()"> 
+       
+	   <!--19- Main Gate-->    
+			<area shape="poly" coords=
+			"
+			2106, 566,
+			2146, 566,
+			2146, 620,
+			2106, 620,
+			" href="#" 
+			alt="PUP Main Gate" 
+			onmouseover="showSceneryBox( 
+			'images/pupmaingate.jpg',
+			'PUP Main gate',
+			'This is where the main campus students, professors, visitors, and university personnel enter the campus premises.')",
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--19- Main Gate circle-->    
+			<area shape="circle" coords=
+			"
+			2107, 597,
+			40
+			" href="#" 
+			alt="PUP Main Gate" 
+			onmouseover="showSceneryBox( 
+			'images/pupmaingate.jpg',
+			'PUP Main gate',
+			'This is where the main campus students, professors, visitors, and university personnel enter the campus premises.')",
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--20- Freedom Park-->    
+			<area shape="poly" coords=
+			"
+			1362, 661,
+			1419, 670,
+			1436, 670,
+			1470, 659,
+			1371, 900,
+			1350, 913,
+			1336, 927,
+			1329, 938, 
+			1319, 921,
+			1325, 917,
+			1315, 898,
+			1309, 901,
+			1300, 885,
+			1317, 874,
+			1271, 796,
+			1248, 805,
+			1237, 785,
+			1213, 798,
+			1246, 760,
+			1321, 690,
+			1347, 668,
+			" href="#" 
+			alt="PUP " 
+			onmouseover="showSceneryBox( 
+			'images/pupfreedompark.jpg',
+			'PUP Freedom Park',
+			'This is where you can find the flagpole and an access to the main building. Nandito rin yung PUPian na may weird font.')" 
+			onmouseout="removeSceneryBox()">
+			
+		<!--20- Freedom Park circle-->    
+			<area shape="circle" coords=
+			"
+			1364, 728,
+			40
+			" href="#" 
+			alt="PUP " 
+			onmouseover="showSceneryBox( 
+			'images/pupfreedompark.jpg',
+			'PUP Freedom Park',
+			'This is where you can find the flagpole and an access to the main building. Nandito rin yung PUPian na may weird font.')" 
+			onmouseout="removeSceneryBox()">
+			
+		<!--21-Ninoy Aquino Library and Learning Resources Center-->    
+			<area shape="poly" coords=
+			"
+			778, 63,
+			888, 26,
+			954, 213,
+			1129, 155,
+			1137, 175,
+			1127, 179,
+			1129, 188,
+			1140, 184,
+			1148, 206,
+			1137, 209,
+			1150, 246,
+			1160, 243,
+			1168, 262,
+			990, 323,
+			1055, 513,
+			948, 550,
+			881, 357,
+			890, 352,
+			884, 333,
+			856, 342,
+			834, 285,
+			863, 273,
+			856, 256,
+			847, 260,
+			" href="#" 
+			
+			" href="#" 
+			alt="PUP NALLRC"
+			onmouseover="showSceneryBox(
+			'images/21ninoy.jpg',
+			'PUP Ninoy Aquino Library and Learning Resources Center',
+			'PUP’s main library. It is the largest library in Asia in terms of structure. This is also where decent restrooms are found.')"
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--22- Basketball_OpenCourt-->    
+			<area shape="poly" coords=
+			"
+			1498, 308,
+			1489, 451,
+			1709, 464,
+			1718, 321
+			" href="#" 
+			alt="PUP Open Court" 
+			onmouseover="showSceneryBox(
+			'images/22opencourt.jpg',
+			'PUP Open Court',
+			'Some students play basketball and volleyball matches here for fun.')",
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--23-CNFS building -->    
+			<area shape="poly" coords=
+			"
+			1061, 1455,
+			1430, 1455,
+			1430, 1403, 
+			1061, 1403,
+			" href="#" 
+			alt="PUP CNFS building" 
+			onmouseover="showSceneryBox(
+			'images/23cnfs.jpg',
+			'PUP CNFS building', 
+			'BS Food Tech Students Campus.')",
+			onmouseout="removeSceneryBox()"> 
+		<!--23-CNFS building circle -->    
+		
+			<area shape="circle" coords=
+			"
+			1252, 1418,
+			40
+			" href="#" 
+			alt="PUP CNFS building" 
+			onmouseover="showSceneryBox(
+			'images/23cnfs.jpg',
+			'PUP CNFS building', 
+			'BS Food Tech Students Campus')"
+			onmouseout="removeSceneryBox()">  
+			
+		<!--24-OVAL_square-->
+            <area shape="poly" coords=
+			"1560, 1096, 
+			1924, 1358, 
+			2180, 1004, 
+			1816, 741" href="#" 
+			alt="PUP Oval" 
+			onmouseover="showSceneryBox(
+			'images/pupoval.jpg', 
+			'PUP Oval', 
+			'This is where students go for physical education activities and some of the hottest events also happen here.')",
+			onmouseout="removeSceneryBox()">
+		
+        
+		<!--24-OVAL_circle1-->    
+			<area shape="circle" coords=
+			"1757,1204, 
+			230" href="#" 
+			alt="PUP Oval" 
+			onmouseover="showSceneryBox(
+			'images/pupoval.jpg', 
+			'PUP Oval', 
+			'This is where students go for physical education activities and some of the hottest events also happen here.')",
+			onmouseout="removeSceneryBox()">
+		
+		<!--24-OVAL_circle2-->    
+			<area shape="circle" coords=
+			"1971,909, 
+			230" href="#" 
+			alt="PUP Oval" 
+			onmouseover="showSceneryBox(
+			'images/pupoval.jpg', 
+			'PUP Oval', 
+			'This is where students go for physical education activities and some of the hottest events also happen here.')",
+			onmouseout="removeSceneryBox()">
+		
+		<!--25-PE Building-->    
+			<area shape="poly" coords=
+			"
+			1222, 28,
+			1221, 52,
+			1220, 96,
+			1219, 118,
+			1218, 140,
+			1217, 162,
+			1214, 227,
+			1213, 227,
+			1212, 249,
+			1211, 271,
+			1210, 293,
+			1209, 316,
+			1208, 350,
+			
+			1221, 351,
+			1247, 351,
+			1247, 352,
+			1275, 352,
+			
+			1275, 352,
+			1275, 325,
+			1276, 325,
+			1276, 299,
+			1278, 275,
+			1279, 250,
+			1280, 226,
+			1280, 176,
+			1282, 176,
+			1282, 152,
+			1283, 152,
+			1283, 128,
+			1284, 128,
+			1284, 103,
+			1285, 103,
+			1285, 79,
+			1287, 79,
+			1287, 55,
+			1288, 55,
+			1289, 32,
+			
+			1276, 32,
+			1276, 31,
+			1272, 31,
+			1272, 30,
+			1248, 30,
+			1248, 29,
+			1231, 29,
+			1231, 28,
+			
+			" href="#" 
+			alt="PUP PE Building" 
+			onmouseover="showSceneryBox( 
+			'images/25pe.jpg',
+			'PUP PE Building',
+			'College of Human Kinetics building.')",
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--25-PE Building_numbercircle-->    
+			<area shape="circle" coords=
+			"
+			1246, 199,
+			40
+			" href="#" 
+			alt="PUP PE Building" 
+			onmouseover="showSceneryBox( 
+			'images/25pe.jpg',
+			'PUP PE Building',
+			'This is the PUP Physical Education Building')"
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--26, Pasig River-->    
+			<area shape="poly" coords=
+			"
+			654, 1459,
+			0, 1459,
+			0, 0,
+			99, 0,
+			243, 220,
+			350, 565,
+			502, 1050,
+			" href="#" 
+			alt="PUP pasig river" 
+			onmouseover="showSceneryBox( 
+			'images/26pasigriver.jpg',
+			'Pasig River',
+			'kung boring na lumangoy sa campus pool, puwedeng dito na lang')" 
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--27, Pasig River Ferry (Sta. Mesa Station)-->    
+			<area shape="poly" coords=
+			"
+			644, 1388,
+			657, 1382,
+			653, 1370,
+			681, 1361,
+			708, 1433,
+			679, 1443,
+			674, 1431,
+			660, 1436,
+			" href="#" 
+			alt="PUP Pasig River Ferry (Sta. Mesa Station)"
+			onmouseover="showSceneryBox( 
+			'images/27pupferry.jpg',
+			'PUP Pasig River Ferry (Sta. Mesa Station)',
+			'PUP Ferry Station is situated nearby to coast guard station, and close to campus development and maintenance.')" 
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--27, Pasig River Ferry (Sta. Mesa Station) circle-->    
+			<area shape="circle" coords=
+			"
+			683, 1398,
+			40
+			" href="#" 
+			alt="PUP Pasig River Ferry (Sta. Mesa Station)"
+			onmouseover="showSceneryBox( 
+			'images/27pupferry.jpg',
+			'PUP Pasig River Ferry (Sta. Mesa Station)',
+			'PUP Ferry Station is situated nearby to coast guard station, and close to campus development and maintenance.')" 
+			onmouseout="removeSceneryBox()">
+			
+		<!--28, access road-->    
+			<area shape="poly" coords=
+			"
+			1927, 612,
+			1832, 610,
+			1838, 616,
+			1838, 624,
+			1836, 629,
+			1643, 731,
+			1420, 1031,
+			1445, 1057,
+			1660, 758,
+			" href="#" 
+			alt="PUP access road" 
+			onmouseover="showSceneryBox( 
+			'images/28access.jpg',
+			'PUP Access Road',
+			'Campus driveway for official or non-official vehicle.')",
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--28, access road circle-->    
+			<area shape="circle" coords=
+			"
+			1559, 862,
+			40
+			" href="#" 
+			alt="PUP access road" 
+			onmouseover="showSceneryBox( 
+			'images/28access.jpg',
+			'PUP Access Road',
+			'Campus driveway for official or non-official vehicle.')",
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--29- Student Canteen -->    
+			<area shape="poly" coords=
+			"
+			588, 626,
+			558, 680,
+			629, 722,
+			661, 668,
+			" href="#" 
+			alt="PUP Student Canteen" 
+			onmouseover="showSceneryBox( 
+			'images/sampaguita.jpg',
+			'PUP Student Canteen',
+			'This is where PUP Students find something to eat.')" 
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--29- Student Canteen circle-->    
+			<area shape="circle" coords=
+			"
+			609, 670,
+			40
+			" href="#" 
+			alt="PUP Student Canteen" 
+			onmouseover="showSceneryBox( 
+			'images/sampaguita.jpg',
+			'PUP Student Canteen',
+			'This is where PUP Students find something to eat.')" 
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--30, Linear park-->    
+			<area shape="poly" coords=
+			"
+			271, 267,
+			284, 263,
+			527, 1009,
+			690, 1290,
+			612, 1319,
+			507, 1018,
+			414, 727,
+			" href="#" 
+			alt="PUP linear park" 
+			onmouseover="showSceneryBox( 
+			'images/30linear.jpg',
+			'PUP linear park',
+			'PUP Linear Park is a park in Metro Manila. PUP Linear Park is situated nearby to Sampaguita Building, and close to Student Canteen.')", 
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--30, Linear park cirle-->    
+			<area shape="circle" coords=
+			"
+			502, 924,
+			40
+			" href="#" 
+			alt="PUP linear park" 
+			onmouseover="showSceneryBox( 
+			'images/30linear.jpg',
+			'PUP linear park',
+			'PUP Linear Park is a park in Metro Manila. PUP Linear Park is situated nearby to Sampaguita Building, and close to Student Canteen.')",
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--31, PUP Mural and the Shrine of Heroism-->    
+			<area shape="circle" coords=
+			"
+			2187, 664,
+			40
+			" href="#" 
+			alt="PUP Mural and the Shrine of Heroism)" 
+			onmouseover="showSceneryBox( 
+			'images/31shrine.jpg',
+			'PUP Mural and the Shrine of Heroism',
+			'The mural is located at the main gate of the University Mabini Campus.  The brass sculpture depicts the purposeful growth of the Filipino youth.')",
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--32 obelisk-->
+			<area shape="circle" coords=
+			"1410, 555, 
+			50" href="#" 
+			alt="PUP Obelisk" 
+			onmouseover="showSceneryBox(
+			'images/pupcenter.jpg',
+			'PUP Obelisk',
+			'This is where graduates and outsiders take their pictures like they are some tourists')",
+			onmouseout="removeSceneryBox()">
+			
+        <!--33-Property Building and Motorpool1 -->    
+			<area shape="poly" coords=
+			"
+			208, 0,
+			209, 45,
+			247, 45,
+			247, 65,
+			317, 65,
+			317, 45,
+			353, 45,
+			353, 0,
+			" href="#" 
+			alt="PUP Property Building and Motorpool circle" 
+			onmouseover="showSceneryBox( 
+			'images/33property.jpg',
+			'PUP Property Building and Motorpool Circle',
+			'no info yeeeeeeeet')" 
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--33-Property Building and Motorpool2-printingpress -->    
+			<area shape="poly" coords=
+			"
+			208, 118,
+			260, 198,
+			290, 178,
+			238, 100,
+			" href="#" 
+			alt="PUP Property Building and Motorpool circle" 
+			onmouseover="showSceneryBox( 
+			'images/33property.jpg',
+			'PUP Property Building and Motorpool Circle',
+			'no info yeeeeeeeet')" 
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--33-Property Building and Motorpool circle-->    
+			<area shape="circle" coords=
+			"
+			284, 51,
+			40
+			" href="#" 
+			alt="PUP Property Building and Motorpool circle" 
+			onmouseover="showSceneryBox( 
+			'images/33property.jpg',
+			'PUP Property Building and Motorpool Circle',
+			'no info yeeeeeeeet')" 
+			onmouseout="removeSceneryBox()"> 
+		<!--34- Pylon-->    
+			<area shape="poly" coords=
+			"
+			2141, 515,
+			2141, 557,
+			2184, 556,
+			2183, 514,
+			" href="#" 
+			alt="PUP Pylon" 
+			onmouseover="showSceneryBox( 
+			'images/34pylon.jpg',
+			'PUP Pylon',
+			'The Pylon originally stood for the true, the good and the beautiful.')" 
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--34- Pylon circle-->    
+			<area shape="circle" coords=
+			"
+			2173, 536,
+			40
+			" href="#" 
+			alt="PUP Pylon" 
+			onmouseover="showSceneryBox( 
+			'images/34pylon.jpg',
+			'PUP Pylon',
+			'The Pylon originally stood for the true, the good and the beautiful.')" 
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--35- Sampaguita building-->    
+			<area shape="poly" coords=
+			"
+			517, 674,
+			480, 740,
+			499, 754,
+			493, 767,
+			525, 785,
+			533, 772,
+			596, 808,
+			633, 745,
+			" href="#" 
+			alt="PUP Sampaguita Building" 
+			onmouseover="showSceneryBox( 
+			'images/sampaguita.jpg',
+			'PUP Sampaguita Building',
+			'This is where PUP Students find something to eat.')" 
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--35- Sampaguita building circle-->    
+			<area shape="circle" coords=
+			"
+			559, 742,
+			40,
+			" href="#" 
+			alt="PUP Sampaguita Building" 
+			onmouseover="showSceneryBox( 
+			'images/sampaguita.jpg',
+			'PUP Sampaguita Building',
+			'This is where PUP Students find something to eat.')" 
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--36- student pavilion-->    
+		
+			<area shape="poly" coords=
+			"
+			1732, 629,
+			1731, 658,
+			1752, 658,
+			1753, 629,
+			" href="#" 
+			alt="PUP student pavilion" 
+			onmouseover="showSceneryBox( 
+			'images/36pavilion.jpg',
+			'PUP Student Pavilion',
+			'There are benches around this area where students usually hang out. There is also a store situated at the Pavilion where PUP merch is being sold.')",
+			onmouseout="removeSceneryBox()"> 
+		
+		<!--36- student pavilion circle-->    
+			<area shape="circle" coords=
+			"
+			1753, 638,
+			40
+			" href="#" 
+			alt="PUP student pavilion" 
+			onmouseover="showSceneryBox( 
+			'images/36pavilion.jpg',
+			'PUP Student Pavilion',
+			'There are benches around this area where students usually hang out. There is also a store situated at the Pavilion where PUP merch is being sold.')",
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--37-Swimming pool -->    
+			<area shape="poly" coords=
+			"
+			1610, 62,
+			1611, 97,
+			1620, 98,
+			1621, 110,
+			1607, 305,
+			1377, 290,
+			1345, 223,
+			1354, 89,
+			1359, 89,
+			1360, 78,
+			1372, 78,
+			1374, 47,
+			" href="#" 
+			alt="PUP Swimming Pool" 
+			onmouseover="showSceneryBox( 
+			'images/puppool.jpg',
+			'PUP Swimming Pool',
+			'This is where swimming classes are held.')" 
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--38- Tennis_OpenCourt-->    
+			<area shape="poly" coords=
+			"
+			1718, 507,
+			1934, 518,
+			1946, 333,
+			1734, 319
+			" href="#" 
+			alt="PUP Open Court Tennis" 
+			onmouseover="showSceneryBox(
+			'images/38tennis.jpg',
+			'PUP Tennis Open Court',
+			'An open court dedicated for tennis matches.')",
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--39- water tank-->    
+			<area shape="circle" coords=
+			"
+			760, 175,
+			30
+			" href="#" 
+			alt="PUP water tank" 
+			onmouseover="showSceneryBox( 
+			'images/wtank.jpg',
+			'PUP Water Tank',
+			'Who told you UFOs arent real??????? Theres one sa PUP oh over there')" 
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--39- water tank-->    
+			<area shape="circle" coords=
+			"
+			762, 175,
+			40
+			" href="#" 
+			alt="PUP water tank" 
+			onmouseover="showSceneryBox( 
+			'images/wtank.jpg',
+			'PUP Water Tank',
+			'Who told you UFOs arent real??????? Theres one sa PUP oh over there')" 
+			onmouseout="removeSceneryBox()"> 
+			
+		<!--40-WESTGATE_circle -->
+			<area shape="circle" coords=
+			"2187, 376, 
+			40" href="#" 
+			alt="PUP WEST_Gate" 
+			onmouseover="showSceneryBox( 
+			'images/40westgate.jpg',
+			'PUP WEST Gate',
+			'West gate serves as a shortcut to PUP Gym, Open Courts, and Swimming Pool. It also has a parking space.')", 
+			onmouseout="removeSceneryBox()">
+		
+		</map> 
+        <span id="display"></span>
+    </main>
+</body>
+</html>
